@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiciSabana · Exposición POO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="viewport">
+    <div id="stage"></div>
+  </div>
+
+  <!-- Barra inferior de control -->
+  <nav id="controls">
+    <button id="prev" title="Anterior (←)">&#8592;</button>
+    <span id="counter">1 / 1</span>
+    <button id="next" title="Siguiente (→)">&#8594;</button>
+    <button id="notesBtn" title="Notas del expositor (N)">Notas</button>
+    <button id="fsBtn" title="Pantalla completa (F)">&#x26F6;</button>
+  </nav>
+  <div id="progress"><div id="progressBar"></div></div>
+
+  <!-- Notas del expositor -->
+  <aside id="notes" hidden>
+    <div class="notes-head">🎤 Notas para exponer <span>(N para cerrar)</span></div>
+    <div id="notesBody"></div>
+  </aside>
+
+  <script src="slides.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
